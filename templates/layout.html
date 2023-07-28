@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Website Name</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <script
+      src="https://kit.fontawesome.com/d343a662f2.js"
+      crossorigin="anonymous"
+    ></script>
+      <script src="https://cdn.plot.ly/plotly-2.20.0.min.js" charset="utf-8"></script>
+      <script src="{{url_for('static',filename='script.js')}}"></script>
+
+  </head>
+  <body>
+      <div class="sidenav">
+      <div class="logo">Website Name</div>
+      <h4>Main Menu</h4>
+      <div class="box">
+        <a href="/" id="box1"><i class="fa-solid fa-house"></i>Dashboard</a>
+      </div>
+      <div class="box">
+        <a href="/members" id="box2"><i class="fa-solid fa-users"></i>Members</a>
+      </div>
+      <h4>Settings</h4>
+      <div class="box">
+        <a href="/setting" id="box3"><i class="fa-solid fa-gear"></i>Settings</a>
+      </div>
+      <div class="box">
+        <a href="/help" id="box4"
+          ><i class="fa-solid fa-user-shield"></i>Help Center</a
+        >
+      </div>
+    </div>
+
+{% block body %}
+  {% endblock %}
+
+
+</body>
+</html>

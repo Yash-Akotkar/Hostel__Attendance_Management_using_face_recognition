@@ -1,0 +1,9 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql+pymysql://root:@localhost/hostel",
+    "prod_uri": "mysql+pymysql://root:@localhost/hostel",
+    "no_of_rows": 3
+  }
+}

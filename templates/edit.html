@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div class="space">
+  <div class="form">
+    	<!-- Input form -->
+	<form action="/edit/{{face.id}}" method="post" enctype="multipart/form-data">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" value="{{face.name}}" required>
+
+		<label for="age">Age:</label>
+		<input type="number" id="age" name="age" value="{{face.age}}" required>
+
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender" value="{{face.gender}}" required>
+			<option value="">--Select--</option>
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+			<option value="Other">Other</option>
+		</select>
+
+		<label for="image">Image:</label>
+		<input type="file" id="image" name="image" value="{{face.image}}" accept="image/*" class="image-input" required>
+
+		<label for="type">Type:</label>
+		<input type="text" id="type" name="type" value="{{face.type}}" required>
+
+		<input type="submit" value="Submit" class="submit-button">
+	</form>
+  </div>
+</div>
+
+{% endblock %}

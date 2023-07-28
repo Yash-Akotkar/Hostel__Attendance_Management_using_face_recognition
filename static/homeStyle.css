@@ -1,0 +1,59 @@
+h1 {
+  color: white;
+  margin: 10px 0 20px 30px;
+  font-size: 28px;
+  padding-top: 15px;
+}
+
+.super {
+  border-radius: 10px;
+  background-color: #212327;
+  height: 500px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+}
+
+.smallbox {
+  width: 24%;
+  height: 70px;
+  background-color: #37393d;
+  /* border: 1px solid #000; */
+  float: left;
+  color: white;
+  border-radius: 10px;
+}
+
+/* .icon {
+  display: flex;
+} */
+
+.info {
+  display: flex;
+  margin: 20px 20px 20px 20px;
+}
+
+#student {
+  display: inline;
+}
+
+.name {
+  display: block;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+/* 
+.plot {
+  margin-left: 320px;
+} */

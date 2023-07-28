@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="space">
+    <div>
+		<input type="text" class="search-box" placeholder="Search...">
+		<button class="add-button"><span class="add-icon"></span><a href="/form">Add Student Data</a></button>
+	</div>
+
+
+	<div class="table">
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Gender</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+		    {% for i in people %}
+				<tr>
+					<td>{{i.id}}</td>
+					<td>{{i.name}}</td>
+					<td>{{i.age}}</td>
+					<td>{{i.gender}}</td>
+					<td><a href="/edit/{{i.id}}"><button class="but">Edit</button></a></td>
+					<td><a href="/delete/{{i.id}}"><button class="but">Delete</button></a></td>
+				</tr>
+    		{% endfor %}
+
+		</tbody>
+	</table>
+		</div>
+	<div class = pagination>
+            <a href="{{before}}"><button class="before">Prev</button></a>
+            <a href="{{after}}"><button class="after">Next</button></a>
+        </div>
+</div>
+
+{% endblock %}
+

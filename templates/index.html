@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="space">
+    <div class="super">
+      <h1>Dashboard</h1>
+
+      <div class="container">
+        <div class="smallbox">
+          <div class="info">
+            <img
+              id="student"
+              src="{{url_for('static',filename='student.png') }}"
+              alt="student"
+              width="40"
+              height="40"
+            />
+            <div class="column">
+              <div class="name">Students</div>
+              <div class="value">{{student}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="smallbox">
+          <div class="info">
+            <img
+              id="staff"
+              src="{{url_for('static',filename='steward.png') }}"
+
+              alt="staff"
+              width="40"
+              height="40"
+            />
+            <div class="column">
+              <div class="name">Staff Members</div>
+              <div class="value">{{staff}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="smallbox">
+          <div class="info">
+            <img
+              id="visitor"
+              src="{{url_for('static',filename='traveler.png') }}"
+
+              alt="visitor"
+              width="40"
+              height="40"
+            />
+            <div class="column">
+              <div class="name">Visitors</div>
+              <div class="value">{{visitor}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="smallbox">
+          <div class="info">
+            <img
+              id="unknown"
+              src="{{url_for('static',filename='anonymous.png') }}"
+
+              alt="unknown"
+              width="40"
+              height="40"
+            />
+            <div class="column">
+              <div class="name">Unknown</div>
+              <div class="value">{{unknown}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="plot">
+              <div class="graph">
+                  {{ plot3_div|safe }}
+              </div>
+
+
+
+      </div>
+    </div>
+
+  <div class="super">
+    <div class="table">
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Age</th>
+				<th>Gender</th>
+				<th>In Time</th>
+				<th>Out Time</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+		<tbody>
+		    {% for face in faces %}
+				<tr>
+					<td>{{face.id}}</td>
+					<td>{{face.name}}</td>
+					<td>{{face.age}}</td>
+					<td>{{face.gender}}</td>
+					<td>{{face.inTime}}</td>
+					<td>{{face.outTime}}</td>
+					<td>{{face.date}}</td>
+				</tr>
+    		{% endfor %}
+		</tbody>
+	</table>
+        <div class = pagination>
+            <a href="{{prev}}"><button class="prev">Prev</button></a>
+            <a href="{{nex}}"><button class="nex">Next</button></a>
+        </div>
+		</div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+

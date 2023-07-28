@@ -1,0 +1,299 @@
+/* Style for navigation panel */
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #080b0f;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav h4 {
+  padding: 20px 8px 0px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #c5c7cb;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 0.2em;
+}
+
+.sidenav a {
+  padding: 20px 8px 18px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #c5c7cb;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #85e9c9;
+}
+
+.box {
+  border-radius: 18px;
+  margin: 20px;
+}
+
+.box:hover {
+  background-color: #212327;
+}
+
+.box:hover i {
+  color: #85e9c9;
+}
+
+.sidenav i {
+  color: #c5c7cb;
+  padding: 0 10px 0 0;
+}
+
+body {
+  background-color: #080b0f;
+}
+
+/* Style for main content */
+.main-content {
+  margin-left: 300px; /* Same as the width of the sidenav */
+  padding: 20px 10px;
+}
+
+/* Style for logo and company name */
+.logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Style for profile dropdown */
+.dropdown {
+  float: right;
+  margin-right: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  margin-top: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.content {
+  background-color: #212327;
+  color: #fffeff;
+}
+
+h1 {
+  color: white;
+  margin: 10px 0 20px 30px;
+  font-size: 28px;
+  padding-top: 15px;
+}
+
+.super {
+  border-radius: 10px;
+  background-color: #212327;
+  height: 650px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: white;
+}
+
+.smallbox {
+  width: 24%;
+  height: 70px;
+  background-color: #37393d;
+  /* border: 1px solid #000; */
+  float: left;
+  color: white;
+  border-radius: 10px;
+}
+
+/* .icon {
+  display: flex;
+} */
+
+.info {
+  display: flex;
+  margin: 20px 20px 20px 20px;
+}
+
+#student {
+  display: inline;
+}
+
+.name {
+  display: block;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.plot {
+  margin:20px;
+
+  display: flex;
+}
+
+.graph {
+    margin-left:20px;
+     width: 450px;
+  height:450px;
+}
+
+.space {
+ margin-left: 320px;
+}
+
+		.search-box {
+			display: inline-block;
+			margin-right: 10px;
+			height: 30px;
+			padding: 0 10px;
+			border: 1px solid #ccc;
+			border-radius: 15px;
+			font-size: 14px;
+			vertical-align: middle;
+		}
+
+		.add-button {
+			display: inline-block;
+			height: 30px;
+			padding: 0 10px;
+			border: none;
+			background-color: #4CAF50;
+			color: white;
+			font-size: 14px;
+			font-weight: bold;
+			border-radius: 15px;
+			vertical-align: middle;
+		}
+
+		.add-icon {
+			display: inline-block;
+			height: 30px;
+			padding-right: 5px;
+			background-image: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-plus-round-512.png");
+			background-repeat: no-repeat;
+			background-size: contain;
+			vertical-align: middle;
+		}
+
+.table {
+    color: white;
+
+}
+
+table{
+    border-color: white;
+}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		input[type="text"], input[type="number"], select {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+
+		select {
+			height: 40px;
+		}
+
+		.image-input {
+			display: block;
+			margin-bottom: 20px;
+		}
+
+		.submit-button {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: white;
+			font-size: 14px;
+			font-weight: bold;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+.form {
+    color: white;
+
+}
+
+.contact-tab-content {
+    color:white;
+}
+
+.contact-tab-content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-tab-content {
+  padding: 20px;
+}
+
+.contact-tab-content label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.contact-tab-content input,
+.contact-tab-content textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  width: 50%;
+}
+
+.contact-tab-content button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  width: 10%;
+  border-radius: 5px;
+}
+
