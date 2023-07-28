@@ -101,7 +101,7 @@ def hello():
     # fig.show()
     plot3_div = pyo.plot(fig3, output_type='div')
 
-    return render_template('index.html', params=params, faces=faces, prev=prev, nex=nex, student=student, staff=staff,
+    return render_template('plotly.html', params=params, faces=faces, prev=prev, nex=nex, student=student, staff=staff,
                            visitor=visitor, unknown=unknown, plot3_div=plot3_div)
 
 
